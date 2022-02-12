@@ -1,0 +1,18 @@
+GET http://localhost:8000/api/products HTTP/1.1
+
+###
+
+GET http://localhost:8000/api/products_by_category/1 HTTP/1.1
+
+###
+
+POST http://localhost:8000/api/product HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "iphone",
+    "description": "phone from america",
+    "price": 600,
+    "image": "default.png",
+    "category_id": 1,
+}
